@@ -1,0 +1,625 @@
+@import url(public.css);
+/* 头部样式 */
+
+.top {
+    width: 100vw;
+    height: 2.5rem;
+    background-color: #fff;
+}
+
+.top .content {
+    margin: 0 auto;
+    width: 980px;
+    height: 40px;
+    display: flex;
+    position: relative;
+}
+
+.top .content .left {
+    display: flex;
+    position: absolute;
+    left: 0;
+}
+
+.top .content .right {
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+
+.top .content .left span a {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.top .content .left span:hover a {
+    display: block;
+    z-index: 10;
+}
+
+.top .content .left>a>img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 112px;
+    height: 39px;
+    z-index: 99;
+}
+
+.top .content .left span>img {
+    position: absolute;
+    left: 112px;
+    top: 0;
+    width: 230px;
+    height: 40px;
+}
+
+.top .content .right .paihang iframe {
+    width: 44.25rem;
+    height: 36.375rem;
+    border-width: 0;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 2.5rem;
+    z-index: 99;
+}
+
+.top .content .right h3 {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 2.5rem;
+    cursor: pointer;
+}
+
+.top .content .right h3 a:hover {
+    color: rgb(255, 56, 56);
+}
+
+.top .content .right .text1 {
+    margin-right: 1.25rem;
+    padding-left: 1.875rem;
+}
+
+.top .content .right .text1::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: url(../image/title_sprite.png) -30px 0;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.top .content .right .text2 {
+    padding-right: 1.875rem;
+}
+
+.top .content .right .text2::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: url(../image/title_sprite.png) 0 0;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    transform: rotate(90deg);
+}
+
+.top .content .right .text2:hover iframe {
+    display: block;
+}
+
+/* 头部样式结束 */
+
+/* 导航栏开始 
+
+      nav1开始 */
+
+#nav {
+    height: 134px;
+    background: url(../image/bg-nav.png) center no-repeat;
+    position: relative;
+}
+
+#nav .nav1 {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+#nav .nav1 .left {
+    display: flex;
+    margin-right: 30px;
+}
+
+#nav .nav1 .left a {
+    margin: 6px 20px 0 0;
+}
+
+#nav .nav1 .left h1 {
+    margin-top: 28px;
+    font-size: 24px;
+    color: #ffb400;
+    position: relative;
+}
+
+#nav .nav1 .left h1::after {
+    content: '';
+    background: url(../image/new_version.png);
+    width: 69px;
+    height: 19px;
+    position: absolute;
+    top: 8px;
+    right: -16px;
+}
+
+#nav .nav1 .left h1 span {
+    font-size: 14px;
+    font-weight: normal;
+    display: block;
+    color: #fff;
+}
+
+#nav .nav1 ul {
+    display: flex;
+}
+
+#nav .nav1 li a {
+    line-height: 100px;
+    text-align: center;
+    display: block;
+    width: 6.5625rem;
+    height: 100px;
+    color: #fff;
+    font-size: 16px;
+}
+
+#nav .nav1 li a:hover {
+    color: #ffb400;
+}
+
+.search {
+    width: 20px;
+    height: 100px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 100px;
+    background: url(../image/top_search.png) center no-repeat;
+}
+
+.search a:hover {
+    background: url(../image/top_search_hover.png) center no-repeat;
+}
+
+#nav .nav1 .right {
+    position: absolute;
+    top: 0;
+    right: -6.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#nav .nav1 .right>span {
+    display: block;
+    width: 46px;
+    height: 45px;
+    cursor: pointer;
+    background: url(../image/dia-login-head.png) center no-repeat;
+}
+
+#nav .nav1 .right p {
+    color: #fff;
+}
+
+#nav .nav1 .right p span {
+    color: #ffb400;
+    cursor: pointer;
+}
+
+/* nav1完成 */
+
+/* nav2开始 */
+
+#nav .nav2 {
+    width: 100vw;
+    background: rgb(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s ease-in-out;
+}
+
+.nav2>ul {
+    width: 1100px;
+    margin: 7.5rem auto 0;
+    position: relative;
+    left: 23.75rem;
+    display: flex;
+}
+
+.nav2 li li {
+    width: 106px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    position: relative;
+}
+
+.nav2 a {
+    color: #fff;
+}
+
+.nav2 a:hover {
+    color: #ffb400;
+}
+
+#nav .nav2 .new::before, #nav .nav2 .hot::before {
+    content: 'N';
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 12px;
+    color: #fff;
+    background: #f31419;
+    border-radius: 50%;
+    position: absolute;
+    left: 3px;
+    top: 12px;
+}
+
+#nav .nav2 .hot::before {
+    content: 'H';
+    left: 10px;
+}
+
+#nav .nav2 .tb_2 li:last-child::before {
+    left: -5px;
+}
+
+#nav .nav2 .tb_4 li:first-child::before {
+    left: -10px;
+}
+
+#nav .nav2 .tb_5 li:nth-child(3)::before {
+    left: 2px;
+}
+
+#nav .nav2 .tb_6 span {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    background-color: #fff;
+    position: absolute;
+    left: -161px;
+    display: none;
+}
+
+#nav .nav2 .tb_6 span::after {
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid #fff;
+    position: absolute;
+    right: -20px;
+}
+
+#nav .nav2 ul .tb_6 img {
+    width: 100%;
+}
+
+#nav .nav2 .tb_6 li:nth-child(1) span {
+    top: -15px;
+}
+
+#nav .nav2 .tb_6 li:nth-child(1) span::after {
+    top: 26px;
+}
+
+#nav .nav2 .tb_6 li:nth-child(2) span {
+    top: -40px;
+}
+
+#nav .nav2 .tb_6 li:nth-child(2) span::after {
+    top: 50px;
+}
+
+#nav .nav2 .tb_6 li:nth-child(3) span {
+    top: -48px;
+}
+
+#nav .nav2 .tb_6 li:nth-child(3) span::after {
+    top: 58px;
+}
+
+#nav .nav2 .tb_6 li:nth-child(4) span {
+    top: -45px;
+}
+
+#nav .nav2 .tb_6 li:nth-child(4) span::after {
+    top: 55px;
+}
+
+#nav .nav2 .tb_6 li:hover span {
+    display: block;
+}
+
+#nav:hover .nav2 {
+    height: 25rem;
+}
+
+/* nav2结束 */
+
+/* 导航栏结束 */
+
+/* 登录弹框开始 */
+
+#loginbox .content {
+    width: 643px;
+    height: 327px;
+    background: url(../image/dia-login-bg.png) no-repeat center;
+}
+
+#loginbox .content .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#loginbox .content .btn a {
+    width: 130px;
+    height: 164px;
+    font-size: 0;
+    margin: 0 40px;
+}
+
+#loginbox .content .btn a:nth-child(1) {
+    background: url(../image/dia-login-qq.png) no-repeat center;
+}
+
+#loginbox .content .btn a:nth-child(2) {
+    background: url(../image/dia-login-wx.png) no-repeat center;
+}
+
+/* 登录弹框结束 */
+
+/* banner部分开始 */
+
+.topbg {
+    height: 650px;
+    background: #fff url(../image/Bigbg.jpg) no-repeat top center;
+    margin-top: -134px;
+}
+
+#banner {
+    height: 562px;
+    padding-top: 20px;
+    background: #fff url(../image/Bigbg2.jpg) no-repeat top center;
+}
+
+#banner .bottombg {
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#banner .bottombg .year {
+    width: 120px;
+    height: 154px;
+    position: absolute;
+    left: -140px;
+    top: 0;
+    background: url(../image/year-btn.png) no-repeat center;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+#banner .Top {
+    display: flex;
+    height: 320px;
+}
+
+#banner .Top .topleft h3 {
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: normal;
+    color: #ffb400;
+}
+
+#banner .Top .topleft a {
+    display: block;
+    height: 54px;
+    margin-bottom: 5px;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+#banner .Top .topleft {
+    width: 180px;
+    background: url(../image/section1_ecod.png) no-repeat center;
+    text-align: center;
+}
+
+#banner .Top .topleft img {
+    width: 160px;
+}
+
+/* 轮播图 */
+
+#banner .topcenter {
+    width: 590px;
+}
+
+#banner .topcenter .Innerimg {
+    width: 400%;
+}
+
+#banner .topcenter .dian {
+    right: 17px;
+    bottom: 10px;
+}
+
+#banner .topcenter .dian span:hover {
+    background: #feb012;
+}
+
+#banner .topcenter .dian span {
+    width: 20px;
+    height: 8px;
+    margin-right: 5px;
+}
+
+#banner .topcenter .dian .active {
+    width: 40px;
+    background: #feb012;
+}
+
+/* 轮播图  完 */
+
+#banner .topbottom {
+    width: 430px;
+    background-color: #fff;
+}
+
+#banner .topbottom .tab {
+    display: flex;
+    justify-content: space-between;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 15px;
+}
+
+#banner .topbottom .tab li {
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    margin: 0 17px;
+    border-bottom: 3px solid #fff;
+    cursor: pointer;
+}
+
+#banner .topbottom .tab li:hover {
+    color: #feb012;
+}
+
+#banner .topbottom .tab li.active {
+    color: #feb012;
+    border-color: #feb012;
+    font-weight: bold;
+}
+
+/* 下方文本部分 */
+
+#banner .topbottom .tabcontent.active li {
+    font-size: 14px;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 35px;
+    display: flex;
+}
+
+#banner .topbottom .tabcontent.active li:nth-child(1) {
+    background: #f7f7f7;
+    height: 56px;
+    line-height: 56px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#banner .topbottom .tabcontent.active li:nth-child(1) a {
+    color: #ffa100;
+    width: 394px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#banner .topbottom .tabcontent.active li a:hover {
+    color: #feb012;
+}
+
+#banner .topbottom .tabcontent.active li a {
+    color: #000;
+    width: 290px;
+    /* 设置省略号-------必须给元素设置宽度 -----*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#banner .topbottom .tabcontent.active li i {
+    color: #24262d;
+    font-style: normal;
+    margin-right: 25px;
+}
+
+#banner .topbottom .tabcontent.active li span {
+    margin-right: 8px;
+    color: #656565;
+}
+
+#banner .bottombg .Bottom ul {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#banner .bottombg .Bottom ul li {
+    width: 285px;
+    height: 179px;
+}
+
+/* 适龄提示内容开始  */
+
+#yearbox .content {
+    width: 674px;
+    height: 613px;
+    background: url(../image/year-hint.png) no-repeat center;
+}
+
+#yearbox .content .scrollcontent {
+    width: 100%;
+    height: 470px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 25px;
+    box-sizing: border-box;
+}
+
+#yearbox .content .scroll {
+    padding: 45px 30px 0 35px;
+}
+
+#yearbox .content .scrollcontent h4 {
+    font-size: 22px;
+    color: #dc7c00;
+    margin-bottom: 10px;
+}
+
+#yearbox .content .scrollcontent p {
+    font-size: 20px;
+    color: #535353;
+    line-height: 33px;
+    margin-bottom: 40px;
+}

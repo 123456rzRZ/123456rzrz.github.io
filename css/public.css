@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: yes;
+}
+
+html {
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    vertical-align: middle;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: none;
+    outline: 0;
+    cursor: pointer;
+}
+
+/* 登录弹框通用样式 */
+
+.login {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0, 0, 0, .7);
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.login.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .content {
+    position: relative;
+}
+
+.login .content h1 {
+    width: 643px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    font-size: 24px;
+    color: #fffefe;
+}
+
+.login .content .close {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    background: url(../image/dia-login-close.png)no-repeat center;
+}
+
+/* 登录弹框通用样式  完 */
+
+/* 轮播图 */
+
+#banner .topcenter {
+    overflow: hidden;
+    position: relative;
+}
+
+#banner .topcenter .Innerimg {
+    display: flex;
+    position: absolute;
+    left: 0;
+}
+
+#banner .topcenter .dian {
+    position: absolute;
+    display: flex;
+}
+
+#banner .topcenter .dian span {
+    cursor: pointer;
+    background: #fff;
+}
+
+/* 新闻 */
+
+.tabcontent {
+    display: none;
+}
+
+.tabcontent.active {
+    display: block;
+}
+
+/* more 部分 */
+
+.more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.more a {
+    width: 17px;
+    height: 17px;
+    background: url(../image/spr_icon.png);
+}
