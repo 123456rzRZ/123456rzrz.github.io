@@ -60,7 +60,7 @@ dz.ondrop = function (ev) {
 	while(i<len){
 		tr=document.createElement('tr');
 		//获取文件大小
-		size=Math.round(files[i].size * 100 / 1024) / 100 + 'KB';
+		size=Math.round(files[i].size * 1000 / 1024) / 1000+ 'KB';
 		//获取格式化的修改时间
 		time = files[i].lastModifiedDate.toLocaleDateString() + ' '+files[i].lastModifiedDate.toTimeString().split(' ')[0];
 		tr.innerHTML='<td>'+files[i].name+'</td><td>'+time+'</td><td>'+size+'</td><td>删除</td>';
@@ -96,13 +96,13 @@ function upload(){
 		contentType: false,
 		processData: false,
 		success: function (data) {
-			alert('succeed!')  //可以替换为自己的方法
+			alert('上传成功!')  //可以替换为自己的方法
 			closeModal();
 			data.deleteAll(); //清空formData
 			$('.tbody').empty(); //清空列表
 		},
 		error: function (returndata) {
-			alert('failed!')  //可以替换为自己的方法
+			alert('上传失败!')  //可以替换为自己的方法
 		}
 	});
 }
