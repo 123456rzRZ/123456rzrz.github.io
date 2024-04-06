@@ -1,0 +1,26 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-item {
+    width: 280px;
+    height: 250px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 8px;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-container {
+    position: absolute;
+    width: 800px;
+    height: 250px;
+    background-color: black;
+    perspective: 800px;
+    transform-style: preserve-3d;
+}
